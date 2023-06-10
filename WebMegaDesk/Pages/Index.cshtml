@@ -1,11 +1,14 @@
 ﻿@page
 @model WebMegaDesk.Pages.IndexModel
 
+
 @{
     ViewData["Title"] = "Index";
+    //DeskQuote.CalculatePrice();//
 }
 
 <!--<h1 class="deskquotes-table__title">Browse Quotes</h1>-->
+<a class="create-button" asp-page="Create">Create Your Desk</a>
 
 <table class="table deskquotes-table">
     <thead class="deskquotes-table__head">

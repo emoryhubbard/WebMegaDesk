@@ -19,6 +19,7 @@ namespace WebMegaDesk.Pages
             _context = context;
         }
 
+        
         public IList<DeskQuote> DeskQuote { get;set; } = default!;
 
         public async Task OnGetAsync()
@@ -29,4 +30,6 @@ namespace WebMegaDesk.Pages
             }
         }
     }
+
+    
 }

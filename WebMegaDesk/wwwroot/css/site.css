@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100..900&display=swap");
-
+/*Jared Did This*/
+@import url("https://fonts.googleapis.com/css2?family=Gugi&display=swap");
 :root {
     --ratio: 1.5;
     --s-5: calc(var(--s-4) / var(--ratio));
@@ -25,7 +26,7 @@
 }
 
 * {
-    font-family: Roboto, sans-serif;
+    font-family: Gugi, Roboto, sans-serif;
 }
 
 html {
@@ -101,3 +102,11 @@ tr:nth-child(even) {
 footer {
     background-color: var(--very-dark-brown);
 }
+
+a {
+    color: black;
+}
+
+.create-button {
+    background-color: white;
+    border-radius: 5px;

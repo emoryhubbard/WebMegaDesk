@@ -25,14 +25,19 @@
                 <span asp-validation-for="DeskQuote.CustomerName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="DeskQuote.Price" class="control-label"></label>
-                <input asp-for="DeskQuote.Price" class="form-control" />
-                <span asp-validation-for="DeskQuote.Price" class="text-danger"></span>
-            </div>
-            <div class="form-group">
                 <label asp-for="DeskQuote.Material" class="control-label"></label>
-                <input asp-for="DeskQuote.Material" class="form-control" />
+                <select name="Material">
+                    <option value="">Please Select &#9662;</option>
+                    <option value="Oak">Oak</option>
+                    <option value="Laminate">Laminate</option>
+                    <option value="Pine">Pine</option>
+                    <option value="Rosewood">Rosewood</option>
+                    <option value="Vaneer">Vaneer</option>
+
+                </select>
                 <span asp-validation-for="DeskQuote.Material" class="text-danger"></span>
+
+
             </div>
             <div class="form-group">
                 <label asp-for="DeskQuote.DrawerCount" class="control-label"></label>
@@ -51,11 +56,17 @@
             </div>
             <div class="form-group">
                 <label asp-for="DeskQuote.RushDays" class="control-label"></label>
-                <input asp-for="DeskQuote.RushDays" class="form-control" />
+                <select name="Material">
+                    <option value="">Please Select &#9662;</option>
+                    <option value="3">3</option>
+                    <option value="5">5</option>
+                    <option value="7">7</option>
+                    <option value="14">14</option>
+                </select>
                 <span asp-validation-for="DeskQuote.RushDays" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Create My Desk" class="btn btn-primary" />
             </div>
         </form>
     </div>
