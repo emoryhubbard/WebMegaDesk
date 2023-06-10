@@ -5,66 +5,63 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<!--<h1 class="deskquotes-table__title">Browse Quotes</h1>-->
 
-<p>
-    <a asp-page="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
+<table class="table deskquotes-table">
+    <thead class="deskquotes-table__head">
         <tr>
-            <th>
+            <th class="deskquotes-table__th deskquotes-table__date">
                 @Html.DisplayNameFor(model => model.DeskQuote[0].Date)
             </th>
-            <th>
+            <th class="deskquotes-table__th">
                 @Html.DisplayNameFor(model => model.DeskQuote[0].CustomerName)
             </th>
-            <th>
+            <th class="deskquotes-table__th">
                 @Html.DisplayNameFor(model => model.DeskQuote[0].Price)
             </th>
-            <th>
+            <th class="deskquotes-table__th">
                 @Html.DisplayNameFor(model => model.DeskQuote[0].Material)
             </th>
-            <th>
+            <th class="deskquotes-table__th">
                 @Html.DisplayNameFor(model => model.DeskQuote[0].DrawerCount)
             </th>
-            <th>
+            <th class="deskquotes-table__th">
                 @Html.DisplayNameFor(model => model.DeskQuote[0].Width)
             </th>
-            <th>
+            <th class="deskquotes-table__th">
                 @Html.DisplayNameFor(model => model.DeskQuote[0].Depth)
             </th>
-            <th>
+            <th class="deskquotes-table__th">
                 @Html.DisplayNameFor(model => model.DeskQuote[0].RushDays)
             </th>
             <th></th>
         </tr>
     </thead>
-    <tbody>
+    <tbody class="deskquotes-table__body">
 @foreach (var item in Model.DeskQuote) {
-        <tr>
-            <td>
+        <tr class="deskquotes-table__tr">
+            <td class="deskquotes-table__td deskquotes-table__date">
                 @Html.DisplayFor(modelItem => item.Date)
             </td>
-            <td>
+            <td class="deskquotes-table__td">
                 @Html.DisplayFor(modelItem => item.CustomerName)
             </td>
-            <td>
+            <td class="deskquotes-table__td">
                 @Html.DisplayFor(modelItem => item.Price)
             </td>
-            <td>
+            <td class="deskquotes-table__td">
                 @Html.DisplayFor(modelItem => item.Material)
             </td>
-            <td>
+            <td class="deskquotes-table__td">
                 @Html.DisplayFor(modelItem => item.DrawerCount)
             </td>
-            <td>
+            <td class="deskquotes-table__td">
                 @Html.DisplayFor(modelItem => item.Width)
             </td>
-            <td>
+            <td class="deskquotes-table__td">
                 @Html.DisplayFor(modelItem => item.Depth)
             </td>
-            <td>
+            <td class="deskquotes-table__td">
                 @Html.DisplayFor(modelItem => item.RushDays)
             </td>
             <td>

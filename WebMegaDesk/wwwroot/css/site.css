@@ -1,3 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100..900&display=swap");
+
+:root {
+    --ratio: 1.5;
+    --s-5: calc(var(--s-4) / var(--ratio));
+    --s-4: calc(var(--s-3) / var(--ratio));
+    --s-3: calc(var(--s-2) / var(--ratio));
+    --s-2: calc(var(--s-1) / var(--ratio));
+    --s-1: calc(var(--s0) / var(--ratio));
+    --s0: 1rem;
+    --body-copy: 18px;
+    --s1: calc(var(--s0) * var(--ratio));
+    --s2: calc(var(--s1) * var(--ratio));
+    --s3: calc(var(--s2) * var(--ratio));
+    --s4: calc(var(--s3) * var(--ratio));
+    --s5: calc(var(--s4) * var(--ratio));
+    font-size: 20px;
+    --dark-brown: #4D331F;
+    --light-wood: #E6B17E;
+    --light-tan: #ffc288;
+    --very-light-tan: #ccbaa9;
+    --very-dark-brown: #1b1815;
+    --very-light-gray: #e5e5e5
+}
+
+* {
+    font-family: Roboto, sans-serif;
+}
+
 html {
   font-size: 14px;
 }
@@ -19,4 +49,55 @@ html {
 
 body {
   margin-bottom: 60px;
+  /*background-color: var(--dark-brown);*/
+  background-image: linear-gradient(var(--very-light-tan), var(--dark-brown))
+}
+
+.header-page-item {
+    font-size: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    text-decoration: none !important;
+    color: var(--dark-brown);
+}
+
+header {
+    padding-bottom: 1rem;
+}
+.deskquotes-table {
+    margin-top: 3rem;
+    background-color: white;
+    padding: 1rem;
+}
+
+.deskquotes-table__title {
+    background-color: white;
+    font-weight: normal;
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin-bottom: 0rem;
+    width: fit-content;
+}
+
+.deskquotes-table__date {
+    padding-left: 1rem !important;
+}
+
+.deskquotes-table__th {
+    font-weight: normal;
+}
+
+.deskquotes-table__td {
+    font-size: var(--s-1);
+}
+
+tr:nth-child(even) {
+    background-color: var(--very-light-gray);
+}
+
+footer {
+    background-color: var(--very-dark-brown);
 }
