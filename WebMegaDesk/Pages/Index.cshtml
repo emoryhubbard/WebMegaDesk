@@ -10,6 +10,20 @@
 <!--<h1 class="deskquotes-table__title">Browse Quotes</h1>-->
 <a class="create-button" asp-page="Create">Create Your Desk</a>
 
+<form>
+    <p>
+        <select asp-for="CustomerName" asp-items="Model.Names">
+            <option value="">All</option>
+        </select>
+        <select asp-for="SortColumn">
+            <option value="">CustomerName</option>
+            <option value="Date">Date</option>
+        </select>
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+
+
 <table class="table deskquotes-table">
     <thead class="deskquotes-table__head">
         <tr>
